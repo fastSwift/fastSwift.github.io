@@ -2,9 +2,15 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
   <script>
+    function httpGet(theUrl) {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+      xmlHttp.send( null );
+      return xmlHttp.responseText;
+    }
     function downloadIPA() {
-      var downloadWindow = window.open("http://coldg.ddns.net/fastSwiftLatestRelease.php","Download IPA file", "height=200,width=200");
-      downloadWindow.onload = function() { downloadWindow.close() };
+      var url httpGet("http://coldg.ddns.net/fastSwiftLatestRelease.php");
+      window.location.href = url;
     }
   </script>
   
