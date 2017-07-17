@@ -9,7 +9,7 @@
       return xmlHttp.responseText;
     }
     function downloadIPA() {
-      var url httpGet("http://coldg.ddns.net/fastSwiftLatestRelease.php");
+      var url = httpGet("http://coldg.ddns.net/fastSwiftLatestRelease.php");
       url = url.replace("\n","");
       window.location.href = url;
     }
