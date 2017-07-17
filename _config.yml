@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-slate
 title: ["fastSwift"]
 description: ["iOS application to compile Swift code"]
 show_downloads: ["false"]
