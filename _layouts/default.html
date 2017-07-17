@@ -1,22 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-
-  <script>
-    function httpGet(theUrl) {
-      var xmlHttp = new XMLHttpRequest();
-      xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
-      xmlHttp.send( null );
-      return xmlHttp.responseText;
-    }
-    
-    var url = httpGet("http://coldg.ddns.net/fastSwiftLatestRelease.php");
-    url = url.replace("\n","");
-    
-    function downloadIPA() {
-      window.location.href = url;
-    }
-  </script>
-  
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -41,7 +24,7 @@
           {% if site.show_downloads %}
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/ColdGrub1384/fastSwift/archive/master.zip">Download this project as a .zip file</a>
-              <a class="tar_download_link" onclick="downloadIPA()">Download this project as a tar.gz file</a>
+              <a class="tar_download_link" href="https://github.com/ColdGrub1384/fastSwift/releases/tag/v1.0-beta.1">Download this project's app as IPA</a>
             </section>
           {% endif %}
         </header>
