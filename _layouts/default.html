@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
+  <script>
+    function downloadIPA() {
+      window.open("http://colg.ddns.net/fastSwiftLatestRelease.php");
+    }
+  </script>
+  
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -25,7 +31,7 @@
           {% if site.show_downloads %}
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/ColdGrub1384/fastSwift/archive/master.zip">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ColdGrub1384/fastSwift/archive/master.tar.gz">Download this project as a tar.gz file</a>
+              <a class="tar_download_link" onclick="downloadIPA()">Download this project as a tar.gz file</a>
             </section>
           {% endif %}
         </header>
