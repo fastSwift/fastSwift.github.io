@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<head><title>fastSwift by ColdGrub1384</title></head>
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
