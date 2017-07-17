@@ -1,3 +1,5 @@
+<head><title>fastSwift by ColdGrub1384</title></head>
+
 ---
 layout: default
 ---
